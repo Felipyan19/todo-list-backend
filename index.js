@@ -8,8 +8,8 @@ const app = express();
 
 app.use(express.json());
 
-app.listen(PORT, '192.168.10.180', () => {
-    console.log(`Servidor escuchando en la dirección: http://192.168.10.180:${PORT}/api`);
+app.listen(PORT, '192.168.10.168', () => {
+    console.log(`Servidor escuchando en la dirección: http://192.168.10.168:${PORT}/api`);
 });
 
 app.use(express.static(path.resolve(__dirname, '../client/build')));
