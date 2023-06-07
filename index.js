@@ -24,6 +24,7 @@ app.post('/api', (req, res) => {
   const tarea = req.body;
   tarea.id = Date.now();
   tarea.completada = false;
+  //host:localhost:3001
   tareas.push(tarea);
   console.log(`Tarea agregada: ${JSON.stringify(tarea)}`);
   res.json({ tarea });
